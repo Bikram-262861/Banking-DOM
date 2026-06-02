@@ -10,17 +10,21 @@
 
     <h1 
         class="text-3xl 
-        text-center 
-        mt-12">Your accout details 
+               text-center 
+               mt-12">
+        Your accout details 
+
             <span 
                 class="text-red-400 
-                font-semibold"
+                       font-semibold"
                 >Showing Below !
             </span>
+
     </h1>
 
     <section 
-            class="grid md:grid-cols-3 
+            class="grid 
+            md:grid-cols-3 
             grid-cols-1 
             container 
             mx-auto
@@ -30,26 +34,70 @@
             ">
 
         <div 
-            class="bg-green-100 p-8 rounded shadow-lg">
+            class="bg-green-100 
+                   p-8 
+                   rounded 
+                   shadow-lg">
 
-            <p class="text-2xl">Deposite</p>
-            <P class="text-4xl">$00</P>
+            <p 
+                class="text-2xl">
+                Deposite
+
+            </p>
+
+            <P 
+                class="text-4xl">
+                $ 
+                <span 
+                    id="deposit_amount">
+                    00
+                </span>
+            </P>
 
         </div>
 
         <div 
-            class="bg-red-100 p-8 rounded shadow-lg">
+            class="bg-red-100 
+                    p-8 
+                    rounded 
+                    shadow-lg">
 
-            <p class="text-2xl">Withdraw</p>
-            <P class="text-4xl">$00</P>
+            <p 
+                class="text-2xl">
+                       Withdraw
+            </p>
+
+            <P 
+                class="text-4xl">
+                        $ 
+                        <span 
+                            id="withdraw_amount">
+                            00
+                        </span> 
+            </P>
 
         </div>
 
         <div 
-            class="bg-purple-100 p-8 rounded shadow-lg">
+            class="bg-purple-100 
+                   p-8 
+                   rounded 
+                   shadow-lg">
 
-            <p class="text-2xl">Total Balance</p>
-            <P class="text-4xl">$00</P>
+            <p 
+                class="text-2xl">
+                Total Balance
+            </p>
+            
+            <P 
+                class="text-4xl">
+                $ 
+                <span 
+                    id="total_balance">
+                    00
+                </span>
+                
+            </P>
 
         </div>
 
@@ -57,15 +105,38 @@
 
     </section>
 
-    <section class="mt-16 grid grid-cols-2 container mx-auto gap-4">
+    <section 
+            class="mt-16 
+                   md:grid grid-cols-2
+                   grid-cols-1
+                   container 
+                   mx-auto 
+                   gap-4"
+                   >
 
 
-        <div class="bg-teal-200 rounded shadow-lg p-8">
-            <p class="text-2xl">Please Deposite</p>
-            <input class=" block my-4 p-2 w-1/2 rounded" type="number" placeholder="$$">
+        <div 
+            class="bg-teal-200 
+                   rounded 
+                   shadow-lg 
+                   p-8">
+            <p 
+                class="text-2xl"
+                >
+                Please Deposite
+            </p>
+            <input
+                id="deposit_value"
+                class="block 
+                       my-4 
+                       p-2 
+                       w-1/2 
+                       rounded" 
+                       type="number" 
+                       placeholder="$$">
             <button
 
-                id="click_btn"
+                id="deposit_btn"
 
                 class="inline-block
                        bg-red-400
@@ -80,12 +151,31 @@
             </button>
         </div>
 
-        <div class="bg-gray-200 rounded shadow-lg p-8 rounded">
-            <p class="text-2xl">Please Withdraw</p>
-            <input class="block my-4 p-2 w-1/2" type="number" placeholder="$$">
+        <div 
+            class="bg-gray-200 
+                   rounded 
+                   shadow-lg 
+                   p-8 
+                   rounded"
+                   >
+
+            <p 
+                class="text-2xl"
+                        >
+                       Please Withdraw
+           </p>
+
+            <input
+                id="withdraw_input"
+                class="block 
+                       my-4 
+                       p-2 
+                       w-1/2" 
+                       type="number" 
+                       placeholder="$$">
             <button
 
-                id="click_btn"
+                id="withdraw_btn"
 
                 class="inline-block
                        bg-red-400
@@ -111,7 +201,7 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/home.js"></script>
     
 </body>
 </html>
